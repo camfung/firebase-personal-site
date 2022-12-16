@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cameron Fung</title>
+
+    <!-- update the version number as needed -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-app-compat.js"></script> -->
+    <!-- include only the Firebase features as you need -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-auth-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-database-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-firestore-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-functions-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-messaging-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-storage-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-analytics-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-remote-config-compat.js"></script> -->
+    <!-- <script defer src="/__/firebase/9.15.0/firebase-performance-compat.js"></script> -->
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  </head>
+  <body>
+        <div class="wrapper">
+
+        <nav>
+            <h1>Cameron's site</h1>
+            <section id="nav-options">
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#about">About me</a>
+            </section>
+        </nav>
+
+        <main>
+
+          
+          <h1 class="giant" id="about">About me</h1>
+          <div class="about-me">
+            <div class="about-me-card">
+              <h3>Technologies</h3>  
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde voluptas explicabo rerum expedita saepe dolorem pariatur earum dolorum fugiat corporis voluptates animi, nam, excepturi, quasi autem perferendis alias eius!</p>
+            </div>
+            <div class="about-me-card">
+              <h3>Experience</h3>    
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sit sed saepe, nesciunt quae, reprehenderit impedit laborum optio numquam iure rem eaque possimus dolor. Commodi quia deleniti ea distinctio repellendus.</p>
+            </div>
+            <div class="about-me-card">
+              <h3>One more thing</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quam voluptatem nobis, fugiat iure dolor odit delectus. Enim aperiam, soluta doloremque corrupti corporis quibusdam numquam rerum maiores neque vero laborum.</p>
+            </div>
+          </div>
+            <h1 class="giant" id="projects">Projects</h1>
+            <div class="project-wrapper center">
+                <div id="maze-gen">
+                    <h1 id="maze-gen-head" class="project-head">Maze Generation</h1>
+                    <div id="sketch-holder" class="project-1 project center"></div>
+
+                    <div id="project1" class="project-description">
+                        <p>This project uses the randomized depth first search algorithm to generate the maze.</p>
+                        <p>The project repo on github can be found <a href="https://github.com/camfung/camfung.github.io" target="_blank">here</a></p>
+                        <p>It is being hosted by github you can find the full site <a href="https://camfung.github.io/" target="_blank">here</a></p>
+                        <p>The Maze will change everytime you refresh the page. Click <a href="">here</a> to refresh</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="project-head">Hourly Forcast</h1>
+            <button id="get-curr-temp">Click Here</button>
+            <div class="project" id="project2">
+
+
+                <template id="weather-card"> 
+                    <div class="card-weather"> 
+                        <div id="time" class="weather"></div>
+                        <div id="temp"></div>
+                        <img src="./img/cloud.png" id="weather-icon" alt="img">
+                        <div id="feels-like">Feels like </div>
+                        <div id="humidity">Humidity</div>
+                        <div id="wind">Wind</div>
+                    </div>
+                </template>
+            </div>
+            <div class="project-description">
+                <p>This project is built straight into the website. I am using the open Weather api to get the weather information.</p>
+            </div>
+
+                <!-- <div id="project2" class="project-description">
+                    <h1>Rubiks cube solver</h1>
+                </div> -->
+
+                <!-- <div class="project" id="project-3">
+                    <p>Do you want to know the hourly forcast for Vancouver, Canada</p>
+                    <button id="get-curr-temp">Click Here</button>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div id="project3" class="project-description">
+                    <h1>Current temperature getter</h1>
+                </div> -->
+
+
+            <div id="fractal-header" class="project-head">
+                Fractal Generator
+            </div>
+            <div id="fractals">
+                
+                <div class="card-holder">
+                    <div class="card">
+                        <img src="./img/redPurpleJulia8x.jpg" alt="img"/>
+                    </div>
+                </div>
+                <div class="card-holder">
+                    <div class="card">
+                        <img src="./img/animation1.gif" alt="img"/>
+                    </div>
+                </div>
+                
+
+                <div class="card-holder">
+                    <div class="card">
+                        <img src="./img/juliax9.jpg" alt="img"/>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fractal-des">
+                <p>These are some fractals that I created.</p>
+            </div>
+
+            <h1 class="giant" id="education">Education</h1>
+
+            <div id="education-content">
+              <div class="education-card">
+                <h3>BCIT</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi unde esse incidunt quisquam libero? Quod, praesentium officiis et architecto repudiandae consequuntur ipsum cupiditate facere exercitationem doloremque, quibusdam dolorum numquam aperiam?</p>
+              </div>
+              <div class="education-card">
+                <h3>Douglas College</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium exercitationem repellat temporibus accusamus ex libero in ad dolorum odio? Nemo, a iusto? Id sed delectus molestiae explicabo praesentium, facilis voluptas.</p>
+              </div>
+            </div>
+            </div>
+
+        </main>
+
+
+    </div>
+    <script src="./scripts/libraries/p5.min.js"></script>
+    <script src="./scripts/libraries/p5.sound.min.js"></script>
+    <script src="./scripts/sketch.js"></script>
+    <script src="./scripts/Cell.js"></script>
+    <script src="./scripts/maze.js"></script>
+    <script src="/js/client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  </body>
+</html>

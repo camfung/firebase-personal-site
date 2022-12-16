@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    /* border: 1px solid white; */
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    scrollbar-width: none;
+ }
+
+body {
+    background-color: black;
+    font-family: 'Courier Prime', monospace;
+}
+
+.wrapper {
+    background-color: black;
+    color: rgb(255,253,208);
+    margin: 0 5%;
+}
+
+.giant {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+#main-content {
+    display: flex;
+}
+
+.education-content {
+    width: 100%;
+    padding-top: 100%;
+    margin: 0 auto;
+}
+
+#info {
+    /* padding: 10%; */
+}
+
+.methods{
+    background-color: blue;
+}
+
+.fundamentals{
+    background-color: lightblue;
+}
+
+.web-dev {
+    background-color: orange;
+}
+
+.comms {
+    background-color: salmon;
+}
+
+.project-1800{
+    background-color: red;
+}
+
+.biz {
+    background-color: rgb(177, 177, 31);
+}
+
+.math {
+    background-color: green;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#fractal-des {
+    padding-top: 5%;
+}
+
+.card-holder {
+    perspective: 600px;
+}
+
+.card {
+    background-color: transparent;
+    transform: rotateY(50deg);
+    transition: all 1s ease;
+}
+
+.card:hover {
+    transform: rotateY(0deg);
+}
+
+#project2 {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-weather {
+    margin: 2%;
+    padding: 2%;
+    display: inline-block;
+    border: antiquewhite solid .1em;
+    border-radius: .5em;
+}
+
+.card-weather img {
+    width: 70%;
+}
+
+@media only screen and (min-width: 769px) {
+
+    .about-me, #education-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 2%;
+    }
+
+    .about-me-card, .education-card{
+        border: .2em solid antiquewhite;
+
+        padding: 2%;
+
+        border-radius: 1em;
+    }
+
+    .about-me-card h3, .education-card h3 {
+        text-align: center;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 2% 5% 0 5%;
+        border-bottom: rgb(255,253,208) solid 1px;
+        margin: 0 2%;
+    }
+
+    nav > section {
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    .card-weather {
+        width: 10%;
+    }
+
+    .project {
+        grid-row: 1 / span 1;  
+    }
+
+    .project-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #sketch-holder {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    
+    #about {
+        font-size: 15em;
+    }
+
+    #projects {
+        font-size: 17em;
+    }
+    
+    #education {
+        font-size: 14em;
+    }
+
+    .project-head {
+        text-align: center;
+        font-size: 4em;
+        padding: 5%;
+    }
+
+    #fractals {
+        margin-top: -2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5%;
+    }
+
+    #fractals img {
+        width: 80%;
+        border: white solid .5em;
+        border-radius: 1em;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #nav-options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #fractals{
+        margin: 0 auto;
+    }
+    
+    #fractals img {
+        width: 100%;
+        border: white solid .5em;
+        border-radius: 1em;
+        height: auto;
+    }
+    .card-holder {
+        padding-top: 25%;
+        padding-bottom: 25%;
+        margin: 0 0 0 5%;
+    }
+
+    .card-weather {
+        width: 25%;
+    }
+
+
+    h1 {
+        text-align: center;
+    }
+
+    #sketch-holder {
+        margin: 0 auto;
+    }
+
+    .table-mobile {
+        overflow-x: auto;
+        display: block;
+    }
+}
