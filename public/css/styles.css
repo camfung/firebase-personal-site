@@ -41,10 +41,6 @@ body {
     margin: 0 auto;
 }
 
-#info {
-    /* padding: 10%; */
-}
-
 .methods{
     background-color: blue;
 }
@@ -115,27 +111,29 @@ canvas {
     width: 70%;
 }
 
+.about-me, #education-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.about-me-card, .education-card{
+    border: .2em solid antiquewhite;
+
+    padding: 2%;
+
+    border-radius: 1em;
+}
+
+.about-me-card h3, .education-card h3 {
+    text-align: center;
+}
+
 @media only screen and (min-width: 769px) {
 
-    .about-me, #education-content {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        gap: 2%;
-    }
 
-    .about-me-card, .education-card{
-        border: .2em solid antiquewhite;
-
-        padding: 2%;
-
-        border-radius: 1em;
-    }
-
-    .about-me-card h3, .education-card h3 {
-        text-align: center;
-    }
 
 
     nav {
@@ -250,5 +248,10 @@ canvas {
     .table-mobile {
         overflow-x: auto;
         display: block;
+    }
+
+    .about-me, #education-content {
+        flex-wrap: wrap;
+
     }
 }
