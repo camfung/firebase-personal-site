@@ -12,7 +12,10 @@ ready(function () {
                 console.log(this.status)
             }
         }
-        xhr.open("GET", url);
+
+        url = "http://localhost:5001/cameron-fung/us-central1/api" + url; 
+
+        xhr.open("GET",  url);
         xhr.send();
     }
 
@@ -41,25 +44,6 @@ ready(function () {
     // document.querySelector("#clear").addEventListener("click", function (e){
     //     document.getElementById("names-info").innerHTML = "";
     // });
-
-    document.querySelector("#get-schedule").addEventListener("click", function (e){
-
-        let button = document.querySelector("#get-schedule"); 
-        if (button.textContent === "See schedule"){
-            ajaxGET("/get_schedule?format=html", function (data) {
-                document.querySelector("#schedule-info").innerHTML = data;
-                $("#schedule-info1").slideUp(0);
-                $("#schedule-info1").slideDown(1000);
-
-            });
-            button.textContent = "Hide schedule"
-        } 
-        else if (button.textContent === "Hide schedule"){
-            $("#schedule-info1").slideUp(1000);
-            button.textContent = "See schedule"
-        }
-    });
-
 
     $(document).ready(function(){
         $("#slide-up").click(function(){
