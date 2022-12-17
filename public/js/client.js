@@ -13,57 +13,16 @@ ready(function () {
             }
         }
 
-        url = "http://localhost:5001/cameron-fung/us-central1/api" + url; 
+        url = "https://us-central1-cameron-fung.cloudfunctions.net" + url; 
 
         xhr.open("GET",  url);
         xhr.send();
     }
-
-    // document.querySelector("#get-names-json").addEventListener("click", function (e){
-    //     ajaxGET("/get_names?format=json", function (data) {
-    //         // this call is JSON so we have to parse it:
-    //         let parsedData = JSON.parse(data);
-    //         something = parsedData;
-
-    //         let str = "<ol>"
-    //         for (let i = 0; i < parsedData.length; i++) {
-    //             str += "<li>" + parsedData[i] + "</li>";
-    //         }
-    //         str += "</ol>";
-    //         document.querySelector("#names-info").innerHTML += str;
-    //     });
-    // });
-
-    // document.querySelector("#get-names-html").addEventListener("click", function (e){
-    //     ajaxGET("/get_names?format=html", function (data) {
-    //         document.querySelector("#names-info").innerHTML += data;
-    //     });
-    // });
-
-
-    // document.querySelector("#clear").addEventListener("click", function (e){
-    //     document.getElementById("names-info").innerHTML = "";
-    // });
-
-    $(document).ready(function(){
-        $("#slide-up").click(function(){
-          $("#schedule-info1").slideUp(1000);
-        });
-        $("#slide-down").click(function(){
-          $("#schedule-info1").slideDown(1000);
-        });
-      });
-    // document.querySelector("#get-times-tables").addEventListener("click", function (e){
-    //     let n = document.getElementById("number-input").value;
-    //     ajaxGET("/get_times_tables?n="+n, function (data) {
-    //         console.log(data)
-    //         document.querySelector("#times-tables-info").innerHTML += data;
-    //     });
-    // });
-
-
     document.querySelector("#get-curr-temp").addEventListener("click", function (e){
-        ajaxGET("/get_curr_temp", function (data) {
+        let getWeather = firebase.functions().httpsCallable("getWeather")
+        getWeather()
+        .then((response) => {
+            let data = response.data;
             let hourly_temp = JSON.parse(data);
             let project2 = document.querySelector("#project2");
             let template = document.querySelector("#weather-card");
