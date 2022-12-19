@@ -140,7 +140,7 @@ canvas {
 }
 
 #tech-icons-holder img {
-    width: 30%;
+    width: 10%;
 }
 
 @media only screen and (min-width: 769px) {
@@ -219,6 +219,11 @@ canvas {
         border: white solid .5em;
         border-radius: 1em;
         height: 400px;
+    }
+
+    .education-card {
+        width: 50%;
+        
     }
 }
 
