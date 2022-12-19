@@ -131,11 +131,19 @@ canvas {
     text-align: center;
 }
 
+#tech-icons-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#tech-icons-holder img {
+    width: 30%;
+}
+
 @media only screen and (min-width: 769px) {
-
-
-
-
     nav {
         display: flex;
         justify-content: space-around;
@@ -159,11 +167,16 @@ canvas {
         grid-row: 1 / span 1;  
     }
 
-    .project-wrapper {
+    .project-wrapper-center {
+        display: flex;
+        margin: 0;
+    }
+
+    /* .project-wrapper {
         display: flex;
         align-items: center;
         justify-content: space-around;
-    }
+    } */
 
     #sketch-holder {
         display: flex;

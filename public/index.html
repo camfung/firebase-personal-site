@@ -29,17 +29,17 @@
 
   </head>
   <body>
-      <input type="button" value="test button" id="tester-button">
+      <!-- <input type="button" value="test button" id="tester-button"> -->
 
         <div class="wrapper">
 
         <nav>
             <h1>Cameron's site</h1>
             <section id="nav-options">
+                <a href="#about">About me</a>
                 <a href="#projects">Projects</a>
                 <a href="#education">Education</a>
-                <a href="#about">About me</a>
-            </section>
+              </section>
         </nav>
 
         <main>
@@ -49,7 +49,13 @@
           <div class="about-me">
             <div class="about-me-card">
               <h3>Technologies</h3>  
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde voluptas explicabo rerum expedita saepe dolorem pariatur earum dolorum fugiat corporis voluptates animi, nam, excepturi, quasi autem perferendis alias eius!</p>
+              <div id="tech-icons-holder">
+                <img src="img/c++-icon.png" alt="" class="technology-icon">
+                <img src="img/java-icon.png" alt="" class="technology-icon">
+                <img src="img/node-icon.png" alt="" class="technology-icon">
+                <img src="img/React-icon.png" alt="" class="technology-icon">
+                <img src="img/python-icon.jpg" alt="" class="technology-icon">
+              </div>
             </div>
             <div class="about-me-card">
               <h3>Experience</h3>    
@@ -61,7 +67,7 @@
             </div>
           </div>
             <h1 class="giant" id="projects">Projects</h1>
-            <div class="project-wrapper center">
+            <div class="project-wrapper-center">
                 <div id="maze-gen">
                     <h1 id="maze-gen-head" class="project-head">Maze Generation</h1>
                     <div id="sketch-holder" class="project-1 project center"></div>
@@ -73,8 +79,9 @@
                         <p>The Maze will change everytime you refresh the page. Click <a href="">here</a> to refresh</p>
                     </div>
                 </div>
-            </div>
-            <h1 class="project-head">Hourly Forcast</h1>
+
+                <div id="forecast">
+                  <h1 class="project-head">Hourly Forecast</h1>
             <button id="get-curr-temp">Click Here</button>
             <div class="project" id="project2">
 
@@ -93,6 +100,10 @@
             <div class="project-description">
                 <p>This project is built straight into the website. I am using the open Weather api to get the weather information.</p>
             </div>
+                </div>
+
+            </div>
+            
 
                 <!-- <div id="project2" class="project-description">
                     <h1>Rubiks cube solver</h1>
@@ -134,6 +145,8 @@
 
             <div id="fractal-des">
                 <p>These are some fractals that I created.</p>
+                <p>I created these fractals using c++</p>
+                <p>Click <a href="https://github.com/camfung/Fractal-generator">here</a> to view the code on github.</p>
             </div>
 
             <h1 class="giant" id="education">Education</h1>
